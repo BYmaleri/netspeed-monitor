@@ -19,9 +19,8 @@ DefaultDirName={autopf}\{#AppName}
 DefaultGroupName={#AppName}
 DisableProgramGroupPage=yes
 LicenseFile=..\LICENSE
-OutputDir=installer\output
+OutputDir=output
 OutputBaseFilename=NetSpeedMonitor_Setup_v{#AppVersion}
-SetupIconFile=assets\icon.ico
 Compression=lzma2/ultra64
 SolidCompression=yes
 WizardStyle=modern
@@ -40,7 +39,7 @@ Name: "desktopicon"; Description: "Masaüstüne kısayol oluştur"; GroupDescrip
 Name: "startuprun";  Description: "Windows başlangıcında otomatik çalıştır"; GroupDescription: "Başlangıç:"; Flags: unchecked
 
 [Files]
-Source: "dist\{#AppExe}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\dist\{#AppExe}"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#AppName}";       Filename: "{app}\{#AppExe}"
