@@ -29,7 +29,7 @@ UninstallDisplayIcon={app}\{#AppExe}
 MinVersion=10.0
 ArchitecturesAllowed=x64
 ArchitecturesInstallIn64BitMode=x64
-PrivilegesRequired=lowest    ; Yönetici hakları gerektirmez
+PrivilegesRequired=none
 
 [Languages]
 Name: "turkish";   MessagesFile: "compiler:Languages\Turkish.isl"
