@@ -21,12 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install psutil pyinstaller pillow
 
-<<<<<<< HEAD
-      # ── 5. EXE derle ──────────────────────────────────────────────────
-      - name: Build EXE with PyInstaller
-=======
       - name: Build EXE
->>>>>>> f418fae (fix: workflow guncellendi)
         run: pyinstaller netspeed.spec
 
       - name: Install Inno Setup
